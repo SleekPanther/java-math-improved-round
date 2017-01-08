@@ -1,10 +1,12 @@
 public class MathImprovedRound {
-
-	public static void main(String[] args) {
-		System.out.println(MathImprovedRound.round());
+	
+	public static double round(double numberToRound, int howManyDecimals){
+		double powerOfTen= Math.pow(10, howManyDecimals);		//must be a double to avoid integer division truncation errors
+		return Math.round(numberToRound * powerOfTen ) /powerOfTen;
 	}
 	
-	public static double round(){
-		return 2.0;
+	public static void main(String[] args) {
+		double numTest=1.5345;
+		System.out.println(MathImprovedRound.round(numTest, 10));
 	}
 }
