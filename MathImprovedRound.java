@@ -6,7 +6,7 @@ public class MathImprovedRound {
 	}
 	
 	public static void main(String[] args) {
-		double numTest=1.5345;
-		System.out.println(MathImprovedRound.round(numTest, 10));
+		double numberTest=1.5345;
+		System.out.println(MathImprovedRound.round(numberTest, 10));
 	}
 }
